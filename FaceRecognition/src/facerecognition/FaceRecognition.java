@@ -19,11 +19,11 @@ public class FaceRecognition {
      */
     public static void main(String[] args) throws IOException, FileNotFoundException, ClassNotFoundException {
         // TODO code application logic here
-       // TrainModel model=new TrainModel();
-      // model.setDataSetPath("C:/Users/shail/Documents/NetBeansProjects/FaceRecognition/datastet");
-      //  model.trainModel();
+        TrainModel model=new TrainModel();
+        model.setDataSetPath("./datastet");
+        model.trainModel();
         RecognizeFace recobj=new RecognizeFace();
-        String user=recobj.Predict("C:/Users/shail/Documents/NetBeansProjects/FaceRecognition/test/qry.jpg");
+        String user=recobj.Predict("./test/qry.jpg");
         
     }
     
